@@ -1,0 +1,9 @@
+version: '2'
+services:
+  app:
+    image: golang:1.8
+    volumes:
+      - .:/opt/workspaces/microservices
+    working_dir: /opt/workspaces/microservices
+    command: command: go run main.go
+    
